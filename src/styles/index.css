@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+:root{
+    
+    --azul      : #5163D3;
+    --azulClaro : #D7E4FB;
+
+}
+
+header{
+
+    width: 100%;
+    background-color: var(--azul);
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;
+
+}
+
+header img{
+
+    width: 2rem;
+
+}
+
+main{
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+article{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2rem auto;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px lightgray;
+    
+}
+
+article img{
+
+    display: none;
+    width: 100%;
+
+}
+
+article div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+article:first-child img{
+
+    display: block;
+
+}
+
+article:first-child div{
+
+    gap: 1rem;
+
+}
+
+article:first-child .categoria{
+
+    font-size: 0.9rem;
+
+}
+
+article:first-child a{
+
+    font-size: 1.5rem;
+
+}
+
+article:first-child p{
+
+    font-size: 1rem;
+
+}
+
+article:first-child .fonte{
+
+    display: none;
+
+}
+
+.categoria{
+
+    background-color: var(--azulClaro);
+    color: var(--azul);
+    font-size: 0.6rem;
+    margin: 0.3rem;
+    border-radius: 5px;
+    padding: 4px;
+    width: fit-content  ;
+    font-weight: bold;
+
+}
+
+a{
+
+    text-decoration: none;
+    color: var(--azul);
+    font-size: 0.9rem;
+    margin: 0.3rem;    
+    font-weight: bold;
+
+}
+
+p{
+
+    font-size: 0.7rem;
+    margin: 0.3rem;
+
+}
+
+.fonte{
+
+    font-size: 0.6rem;
+    color: gray;
+    margin: 0.3rem;
+    font-weight: bold;
+
+}
+
+
+@media (min-width: 1024px){
+
+    header{
+
+        width: 100%;
+
+    }
+
+    main{
+
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+    }
+
+    article{
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 45vw;
+        height: 22vh;
+
+    }
+   
+    article img{
+
+        display: block ;
+        width: 30%;
+
+    }
+
+    article div{
+
+        width: 60%
+
+    }
+    
+
+    article:first-child{
+
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+
+    }
+
+    article:first-child img{
+
+        width: 40%;
+        height:100%;
+        min-height: 100%;
+        order: 1;
+        align-self: flex-end;
+
+    }
+
+    article:first-child div{
+
+        max-width: 60%;
+        justify-content: space-evenly;
+
+    }
+
+    article:first-child .fonte{
+
+        display: block;
+    
+    }
+
+    article .categoria{
+
+        font-size: 0.6rem ;
+
+    }
+
+
+}
+
+
